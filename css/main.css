@@ -492,15 +492,8 @@ p {
   text-align: center;
 }
 
-.features {
-  display: flex;
-}
-
 .features__item {
-  width: 270px;
-}
-.features__item + .features__item {
-  margin-left: 30px;
+  width: 100%;
 }
 
 .features__icon {
