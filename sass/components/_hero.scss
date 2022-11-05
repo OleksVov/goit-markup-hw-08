@@ -1,0 +1,28 @@
+.hero {
+   padding: 200px 0;
+   background-color: $color-background-hero;
+   text-align: center;
+}
+
+.hero__title {
+   margin-bottom: 30px;
+   color: $color-text-button;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   width: 700px;
+   margin: 0 auto 30px auto;
+}
+
+.hero__button {
+   display: inline-block;
+   padding: 10px 32px;
+   min-width: 216px;
+   @include transition(background-color);
+   &:hover,
+   &:focus {
+      background-color: $color-hover-button;
+   }
+}

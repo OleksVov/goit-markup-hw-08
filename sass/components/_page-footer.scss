@@ -1,0 +1,22 @@
+.page-footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: $color-background-footer;
+}
+.page-footer__box {
+   display: flex;
+   align-items: baseline;
+}
+.page-footer__social {
+   margin-left: 70px;
+}
+
+.page-footer__text {
+   margin-bottom: 20px;
+   color: $color-text-button;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+}

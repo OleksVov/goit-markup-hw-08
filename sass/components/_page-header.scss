@@ -1,0 +1,9 @@
+.page-header {
+   display: block;
+   border-bottom: 1px solid $color-border-header;
+}
+
+.page-header__box {
+   display: flex;
+   align-items: center;
+}
