@@ -1,5 +1,5 @@
 .hero {
-   padding: 200px 0;
+   padding: 118px 0;
    background-color: $color-background-hero;
    text-align: center;
 }
@@ -8,18 +8,17 @@
    margin-bottom: 30px;
    color: $color-text-button;
    font-weight: 900;
-   font-size: 44px;
-   line-height: 1.36;
+   font-size: 26px;
+   line-height: 1.615;
    letter-spacing: 0.06em;
    text-transform: uppercase;
-   width: 700px;
    margin: 0 auto 30px auto;
 }
 
 .hero__button {
    display: inline-block;
-   padding: 10px 32px;
-   min-width: 216px;
+   padding: 10px 24px;
+   min-width: 200px;
    @include transition(background-color);
    &:hover,
    &:focus {

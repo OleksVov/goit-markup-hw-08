@@ -28,20 +28,3 @@
 @import "./components/subscribe";
 
 
-
-.list {
-   @extend %list;
-}
-.container {
-   @extend %container;
-}
-.overlay {
-   @extend %overlay;
-}
-.button {
-   @extend %button;
-}
-.visually-hidden {
-   @extend %visually-hidden;
-}
-
