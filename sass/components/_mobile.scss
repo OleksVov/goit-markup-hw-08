@@ -1,0 +1,33 @@
+.menu-toggle {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 40px;
+   min-height: 40px;
+   // margin: 0;
+   margin-left: auto;
+   padding: 0;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   outline: none;
+   fill: $color-logo-dark;
+   @media screen and (min-width:768px) {
+      display: none;
+   }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+   fill: $color-text-accent;
+}
+.menu-toggle.icon-close {
+   display: none;
+}
+
+.menu-toggle.is-open .icon-close {
+   display: block;
+}
+
+.menu-toggle.is-open .icon-menu {
+   display: none;
+}

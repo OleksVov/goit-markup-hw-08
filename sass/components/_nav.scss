@@ -1,10 +1,14 @@
 .breadcrumb {
    display: flex;
    align-items: center;
+   width: 100%;
 }
 
 .breadcrumb__list {
    display: flex;
+   @media screen and (max-width: 767px) {
+      display: none;
+   }
 }
 
 .breadcrumb__item:not(:last-child) {
@@ -46,21 +50,5 @@
       border-radius: 2px;
    }
 }
-.breadcrumb__button {
-   display: inline-flex;
-   margin: 0;
-   padding: 12px 8px;
-   border: none;
-   background-color: transparent;
-   fill: $color-logo-dark;
-   &.icon-close {
-      display: none;
-   }
-}
-.breadcrumb__button.is-open .icon-close {
-   display: block;
-}
-.breadcrumb__button.is-open .icon-menu {
-   display: none;
-}
+
 

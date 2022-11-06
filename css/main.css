@@ -361,6 +361,11 @@ p {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .page-header__box {
+    height: 60px;
+  }
+}
 
 .logo {
   color: #2196f3;
@@ -384,10 +389,16 @@ p {
 .breadcrumb {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .breadcrumb__list {
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .breadcrumb__list {
+    display: none;
+  }
 }
 
 .breadcrumb__item:not(:last-child) {
@@ -426,29 +437,14 @@ p {
   border-radius: 2px;
 }
 
-.breadcrumb__button {
-  display: inline-flex;
-  margin: 0;
-  padding: 12px 8px;
-  border: none;
-  background-color: transparent;
-  fill: #000000;
-}
-.breadcrumb__button.icon-close {
-  display: none;
-}
-
-.breadcrumb__button.is-open .icon-close {
-  display: block;
-}
-
-.breadcrumb__button.is-open .icon-menu {
-  display: none;
-}
-
 .contact {
   display: flex;
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
 }
 
 .contact__item {
@@ -480,6 +476,43 @@ p {
 
 .contact__icon {
   margin-right: 10px;
+}
+
+.menu-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  fill: #000000;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: #2196f3;
+}
+
+.menu-toggle.icon-close {
+  display: none;
+}
+
+.menu-toggle.is-open .icon-close {
+  display: block;
+}
+
+.menu-toggle.is-open .icon-menu {
+  display: none;
 }
 
 .hero {

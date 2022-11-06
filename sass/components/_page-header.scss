@@ -6,4 +6,7 @@
 .page-header__box {
    display: flex;
    align-items: center;
+   @media screen and (max-width: 767px) {
+      height: 60px;
+   }
 }
