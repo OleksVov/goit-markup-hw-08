@@ -307,6 +307,11 @@ p {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .overlay {
   max-width: 1600px;
@@ -419,6 +424,26 @@ p {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+.breadcrumb__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 12px 8px;
+  border: none;
+  background-color: transparent;
+  fill: #000000;
+}
+.breadcrumb__button.icon-close {
+  display: none;
+}
+
+.breadcrumb__button.is-open .icon-close {
+  display: block;
+}
+
+.breadcrumb__button.is-open .icon-menu {
+  display: none;
 }
 
 .contact {
@@ -652,11 +677,7 @@ p {
 
 .clients__item {
   height: 92px;
-}
-@media screen and (max-width: 767px) {
-  .clients__item {
-    width: calc((100% - 30px) / 2);
-  }
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients__item {
