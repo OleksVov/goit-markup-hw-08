@@ -20,14 +20,16 @@
 .menu-toggle:focus {
    fill: $color-text-accent;
 }
-.menu-toggle.icon-close {
-   display: none;
+.menu-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 796px;
+   border: 2px solid tomato;
+   z-index: 999;
+   transform: translateX(100%);
 }
-
-.menu-toggle.is-open .icon-close {
-   display: block;
-}
-
-.menu-toggle.is-open .icon-menu {
-   display: none;
+.menu-container.is-open {
+   transform: translateX(0);
 }
