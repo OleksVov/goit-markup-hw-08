@@ -19,14 +19,14 @@
       <div class="container page-header__box">
         <nav class="breadcrumb">
           <a class="logo page-header__logo" href="./index.html">Web<span class="logo__header">Studio</span></a>
-          <button type="button" class="menu-toggle is-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <button type="button" class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="24px" height="24px" aria-label="Перемикач мобільного меню">
               <use class="icon-menu" href="./images/mobile.svg#menu_24px"></use>
             </svg>
           </button>
           <ul class="breadcrumb__list list">
             <li class="breadcrumb__item">
-              <a href="./index.html" class="breadcrumb__link breadcrumb__current">Студія</a>
+              <a href="./index.html" class="breadcrumb__link breadcrumb__current breadcrumb__link--current">Студія</a>
             </li>
             <li class="breadcrumb__item"><a href="./portfolio.html" class="breadcrumb__link">Портфоліо</a></li>
             <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Контакти</a></li>
@@ -50,6 +50,54 @@
             >
           </li>
         </ul>
+        <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg width="24px" height="24px" aria-label="Перемикач мобільного меню">
+              <use href="./images/mobile.svg#close_24px"></use>
+            </svg>
+      </button>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list list">
+            <li class="breadcrumb__item">
+              <a href="./index.html" class="breadcrumb__link breadcrumb__link--current">Студія</a>
+            </li>
+            <li class="breadcrumb__item"><a href="./portfolio.html" class="breadcrumb__link">Портфоліо</a></li>
+            <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Контакти</a></li>
+          </ul>
+          <ul class="list">
+          <li class="">
+            <a href="tel:+380961111111" class="mobile-menu__link">
+              +380961111111</a
+            >
+          </li>
+          <li class="">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="social-mobile list">
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Instagram</a></li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Twitter</a></li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">Facebook</a></li>
+          <li class="social-mobile__item">
+            <a href="#" class="social-mobile__link">LinkedIn</a></li>
+        </ul>
+
+
+        <!-- <ul class="mobile-menu list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link current">Студія</a>
+            </li>
+            <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+          </ul> -->
+
+      </div>
+        </div>
       </div>
     </header>
     <main>
@@ -488,13 +536,6 @@
           <button type="submit" class="button registration__button">Відправити</button>
         </form>
       </div>
-    </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg width="24px" height="24px" aria-label="Перемикач мобільного меню">
-              <use href="./images/mobile.svg#close_24px"></use>
-            </svg>
-      </button>
     </div>
     <script src="./js/modal.js"></script>
      <script

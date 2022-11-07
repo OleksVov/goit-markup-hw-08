@@ -10,19 +10,20 @@
       display: none;
    }
 }
-
+@media screen and (min-width: 768px) {
 .breadcrumb__item:not(:last-child) {
-   margin-right: 50px;
+      margin-right: 50px;
+   }
 }
+
+
 
 .breadcrumb__link {
    display: block;
-   padding-top: 32px;
-   padding-bottom: 32px;
    color: $color-text-title;
    font-weight: 500;
-   font-size: 14px;
-   line-height: 1.14;
+   font-size: 40px;
+   line-height: 1.175;
    letter-spacing: 0.02em;
    text-decoration: none;
    @include transition(color);
@@ -31,12 +32,28 @@
    &:focus {
       color: $color-text-accent;
    }
+   &--current {
+      color: $color-text-accent;
+   }
+   @media screen and (min-width: 768px) {
+      padding-bottom: 32px;
+      padding-top: 32px;
+      font-size: 14px;
+      line-height: 1.14;
+   }
+}
+@media screen and (max-width: 767px) {
+   .breadcrumb__item:not(:last-child) {
+         padding-bottom: 32px;
+      }
+   .breadcrumb__item:last-child {
+         margin-bottom: 302px;
+      }
 }
 
 
 .breadcrumb__current {
    position: relative;
-   color: $color-text-accent;
 
    &::after {
       position: absolute;

@@ -20,16 +20,12 @@
 }
 
 .contact__link {
-   display: flex;
-   align-items: center;
-   margin-left: 10px;
-   padding-top: 32px;
-   padding-bottom: 32px;
+   display: block;
+   padding-bottom: 64px;
    color: $color-text-primary;
    font-weight: 500;
-   font-size: 14px;
-   fill: currentColor;
-   line-height: 1.14;
+   font-size: 24px;
+   line-height: 1.167;
    letter-spacing: 0.02em;
    text-decoration: none;
    @include transition(color);
@@ -37,6 +33,16 @@
    &:hover,
    &:focus {
       color: $color-text-accent;
+   }
+   @media screen and (min-width: 768px) {
+   display: flex;
+   align-items: center;
+   margin-left: 10px;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   font-size: 14px;
+   fill: currentColor;
+   line-height: 1.14;
    }
 }
 
