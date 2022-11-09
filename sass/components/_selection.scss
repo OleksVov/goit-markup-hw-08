@@ -1,7 +1,14 @@
 .selection {
    display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 25px;
+   @media screen and (min-width:768px) {
    justify-content: center;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
+   }
+      @media screen and (min-width:1200px) {
+         margin-bottom: 50px;
+      }
 }
 
 .selection__button {
@@ -27,7 +34,11 @@
             border-radius: 4px;
       }
 }
-
+.selection__item {
+   @media screen and (max-width:767px) {
+         margin-bottom: 15px;
+      }
+}
 .selection__item:not(:last-child) {
    margin-right: 8px;
 }
