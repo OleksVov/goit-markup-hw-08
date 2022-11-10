@@ -51,12 +51,12 @@
           </li>
         </ul>
         <div class="menu js-menu-container" id="mobile-menu">
-      <button class="menu__toggle js-close-menu">
-        <svg width="24px" height="24px" aria-label="Перемикач мобільного меню">
+          <button class="menu__toggle js-close-menu">
+          <svg width="24px" height="24px" aria-label="Перемикач мобільного меню">
               <use href="./images/mobile.svg#close_24px"></use>
             </svg>
-      </button>
-      <div class="mobile-menu">
+          </button>
+        <div class="mobile-menu">
         <ul class="mobile-menu__list list">
             <li class="breadcrumb__item">
               <a href="./index.html" class="breadcrumb__link breadcrumb__link--current">Студія</a>
@@ -65,7 +65,7 @@
             <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Контакти</a></li>
           </ul>
           <ul class="list">
-          <li class="">
+          <li>
             <a href="tel:+380961111111" class="mobile-menu__link">
               +380961111111</a
             >
@@ -86,16 +86,6 @@
           <li class="social-mobile__item">
             <a href="#" class="social-mobile__link">LinkedIn</a></li>
         </ul>
-
-
-        <!-- <ul class="mobile-menu list">
-            <li class="mobile-menu__item">
-              <a href="./index.html" class="mobile-menu__link current">Студія</a>
-            </li>
-            <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
-            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
-          </ul> -->
-
       </div>
         </div>
       </div>
@@ -184,7 +174,10 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="members list">
             <li class="members__item">
-              <img src="./images/imgcard1.jpg" alt="фото Ігор Дем'яненко" width="270" />
+              <img
+              srcset="./images/team1-480.jpg 1x,
+              ./images/team1-480@2x.jpg 2x"
+               src="./images/team1-480.jpg" alt="фото Ігор Дем'яненко" width="450" />
               <div class="members__box">
                 <h3 class="members__subtitle">Ігор Дем'яненко</h3>
                 <p class="members__text">Product Designer</p>
@@ -221,7 +214,9 @@
               </div>
             </li>
             <li class="members__item">
-              <img src="./images/imgcard2.jpg" alt="фото Ольга Рєпіна" width="270" />
+              <img srcset="./images/team2-480.jpg 1x,
+              ./images/team2-480@2x.jpg 2x"
+               src="./images/team2-480.jpg" alt="фото Ольга Рєпіна" width="450" />
               <div class="members__box">
                 <h3 class="members__subtitle">Ольга Рєпіна</h3>
                 <p class="members__text">Frontend Developer</p>
@@ -465,6 +460,7 @@
       </div>
     </footer>
     <!-- Модалка -->
+    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="modal__btn">

@@ -45,20 +45,6 @@ p {
    }
 }
 
-.overlay {
-   max-width: 1600px;
-   height: 400px;
-   margin-left: auto;
-   margin-right: auto;
-   background-image: linear-gradient(to right,
-         $gradient-background-hero,
-         $gradient-background-hero ),
-      url(../images/hero-background.jpg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-}
-
 .button {
    background-color: $color-text-accent;
    color: $color-text-button;
@@ -84,7 +70,4 @@ p {
    clip: rect(0 0 0 0);
    clip-path: inset(50%);
    margin: -1px;
-}
-.current {
-   color: $color-text-accent;
 }

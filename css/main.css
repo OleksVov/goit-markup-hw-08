@@ -313,17 +313,6 @@ p {
   }
 }
 
-.overlay {
-  max-width: 1600px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .button {
   background-color: #2196f3;
   color: #ffffff;
@@ -350,10 +339,6 @@ p {
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
   margin: -1px;
-}
-
-.current {
-  color: #2196f3;
 }
 
 .page-header {
@@ -459,27 +444,38 @@ p {
   border-radius: 2px;
 }
 
-.contact {
-  display: flex;
-  margin-left: auto;
-}
 @media screen and (max-width: 767px) {
   .contact {
     display: none;
   }
 }
-
-.contact__item {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    margin-left: auto;
+  }
 }
-.contact__item + .contact__item {
-  margin-left: 50px;
+
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item + .contact__item {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact__item:not(:last-child) {
+    padding-bottom: 10px;
+  }
 }
 
 .contact__link {
   display: block;
-  padding-bottom: 64px;
   color: #757575;
   font-weight: 500;
   font-size: 24px;
@@ -495,11 +491,16 @@ p {
   .contact__link {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    fill: currentColor;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
     margin-left: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
-    fill: currentColor;
     line-height: 1.14;
   }
 }
@@ -532,6 +533,7 @@ p {
 }
 
 .menu {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -549,6 +551,7 @@ p {
 }
 
 .menu.is-open {
+  display: block;
   transform: translateX(0);
 }
 
@@ -572,6 +575,7 @@ p {
 .social-mobile {
   display: flex;
   gap: 20px;
+  margin-top: 64px;
 }
 
 .social-mobile__item {
@@ -628,6 +632,45 @@ p {
   background-color: #188ce8;
 }
 
+.overlay {
+  max-width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-480.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url("/images/hero-480@2x.jpg");
+  }
+}
+@media screen and (min-width: 481px) {
+  .overlay {
+    background-image: url("/images/hero-768.jpg");
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url("/images/hero-768@2x.jpg");
+  }
+}
+@media screen and (min-width: 769px) {
+  .overlay {
+    background-image: url("/images/hero-1200.jpg");
+    max-width: 1600px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url("/images/hero-1200@2x.jpg");
+  }
+}
 .section {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -674,7 +717,7 @@ p {
 .activity-section {
   padding-top: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .activity-section {
     display: none;
   }
@@ -985,14 +1028,15 @@ p {
 }
 
 .modal {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  min-height: 609px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1038,7 +1082,7 @@ p {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1194,10 +1238,16 @@ p {
   align-items: center;
   margin: 0 auto 30px auto;
   max-width: 423px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__input {
