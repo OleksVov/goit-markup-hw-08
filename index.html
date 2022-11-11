@@ -148,19 +148,28 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="activity list">
             <li class="activity__item">
-              <img src="./images/img1.jpg" alt="програмування" width="370" />
+              <img 
+              srcset="./images/activity1-1200.jpg 1x,
+              ./images/activity1-1200@2x.jpg 2x"
+              src="./images/activity1-1200.jpg" alt="програмування" width="370" />
               <div class="activity__overlay">
                 <p class="activity__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="activity__item">
-              <img src="./images/img2.jpg" alt="створення макету сайта" width="370" />
+              <img 
+               srcset="./images/activity2-1200.jpg 1x,
+              ./images/activity2-1200@2x.jpg 2x"
+              src="./images/activity2-1200.jpg" alt="створення макету сайта" width="370" />
               <div class="activity__overlay">
                 <p class="activity__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="activity__item">
-              <img src="./images/img3.jpg" alt="планшет з кольорами" width="370" />
+              <img 
+               srcset="./images/activity3-1200.jpg 1x,
+              ./images/activity3-1200@2x.jpg 2x"
+              src="./images/activity3-1200.jpg" alt="планшет з кольорами" width="370" />
               <div class="activity__overlay">
                 <p class="activity__text">Дизайнерські рішення</p>
               </div>
@@ -384,7 +393,8 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__box">
-          <div class="address__box">
+          <div class="page-footer__box-tablet">
+            <div class="address__box">
             <a class="logo" href="./index.html">Web<span class="logo__footer">Studio</span></a>
             <address class="address">
               <ul class="list">
@@ -436,6 +446,7 @@
                 </a>
               </li>
             </ul>
+          </div>
           </div>
           <div class="subscribe">
             <p class="page-footer__text">Підпишіться на розсилку</p>

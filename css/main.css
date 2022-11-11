@@ -610,6 +610,11 @@ p {
   background-color: #c4c4c4;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 
 .hero__title {
   margin-bottom: 30px;
@@ -620,6 +625,18 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 700px;
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
 
 .hero__button {
@@ -648,25 +665,25 @@ p {
     background-image: url("/images/hero-480@2x.jpg");
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .overlay {
     background-image: url("/images/hero-768.jpg");
     max-width: 768px;
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: url("/images/hero-768@2x.jpg");
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .overlay {
     background-image: url("/images/hero-1200.jpg");
     max-width: 1600px;
     height: 600px;
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: url("/images/hero-1200@2x.jpg");
   }
@@ -683,9 +700,35 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}
 
-.features__item {
-  padding-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__item {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+  }
 }
 
 .features__icon {
@@ -760,12 +803,34 @@ p {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 .members__item {
-  margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .members__item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .members__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .members__item {
+    width: 270px;
+  }
 }
 
 .members__box {
@@ -1298,6 +1363,13 @@ p {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer__box-tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 .page-footer__social {
   margin-bottom: 60px;
 }
@@ -1365,6 +1437,7 @@ p {
 .subscribe__input {
   margin-bottom: 20px;
   width: 100%;
+  max-width: 450px;
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -1375,6 +1448,12 @@ p {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 .subscribe__input::-moz-placeholder {
   font-size: 16px;

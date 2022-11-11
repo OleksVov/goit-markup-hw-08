@@ -16,10 +16,10 @@
 }
 
 .subscribe__input {
-   // margin-right: 12px;
-   // width: 358px;
+   
    margin-bottom: 20px;
    width: 100%;
+   max-width: 450px;
    padding: 15px 16px;
    font-size: 16px;
    line-height: 1.25;
@@ -30,6 +30,10 @@
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    border-radius: 4px;
    outline: none;
+   @include desktop {
+      margin-right: 12px;
+      width: 358px;
+   }
 
    &::placeholder {
       font-size: 16px;

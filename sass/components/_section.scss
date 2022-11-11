@@ -9,5 +9,10 @@
          line-height: 1.178;
          letter-spacing: 0.03em;
          text-align: center;
+         
+         @include desktop {
+            font-size: 36px;
+            line-height: 1.167;
+         }
       }
 }
