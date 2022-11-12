@@ -22,9 +22,9 @@
             transform: scale(1.1) translate(-50%, -50%);
             opacity: 0;
          }
-   @media screen and (min-width: 1200px) {
+   @include desktop {
       min-height: 581px;
-         min-width: 528px;
+      min-width: 528px;
    }
 }
 

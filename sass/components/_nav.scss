@@ -6,11 +6,11 @@
 
 .breadcrumb__list {
    display: flex;
-   @media screen and (max-width: 767px) {
+   @include tablet-down {
       display: none;
    }
 }
-@media screen and (min-width: 768px) {
+@include tablet {
 .breadcrumb__item:not(:last-child) {
       margin-right: 50px;
    }
@@ -35,14 +35,14 @@
    &--current {
       color: $color-text-accent;
    }
-   @media screen and (min-width: 768px) {
+      @include tablet {
       padding-bottom: 32px;
       padding-top: 32px;
       font-size: 14px;
       line-height: 1.14;
    }
 }
-@media screen and (max-width: 767px) {
+@include tablet-down {
    .breadcrumb__item:not(:last-child) {
          padding-bottom: 32px;
       }

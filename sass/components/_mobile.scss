@@ -16,7 +16,7 @@
    &:focus {
          fill: $color-text-accent;
       }
-   @media screen and (min-width:768px) {
+   @include tablet {
       display: none;
    }
 }
@@ -32,7 +32,7 @@
    background-color: $color-text-button;
    z-index: 999;
    transform: translateX(100%);
-   @media screen and (min-width: 768px) {
+   @include tablet) {
       display: none;
    }
 }

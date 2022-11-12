@@ -526,7 +526,7 @@ p {
 .menu__toggle:hover, .menu__toggle:focus {
   fill: #2196f3;
 }
-@media screen and (min-width: 768px) {
+@inc {
   .menu__toggle {
     display: none;
   }
@@ -544,7 +544,7 @@ p {
   z-index: 999;
   transform: translateX(100%);
 }
-@media screen and (min-width: 768px) {
+@inc ) {
   .menu {
     display: none;
   }
@@ -650,7 +650,7 @@ p {
 }
 
 .overlay {
-  max-width: 480px;
+  width: 100%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -668,7 +668,6 @@ p {
 @media screen and (min-width: 768px) {
   .overlay {
     background-image: url("/images/hero-768.jpg");
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -994,6 +993,7 @@ p {
     margin-bottom: -30px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .projects__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1373,12 +1373,20 @@ p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .page-footer__box-tablet {
+  .page-footer__tablet {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0 89px 0 76px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .page-footer__tablet {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .page-footer__social {
     margin-bottom: 60px;
@@ -1391,7 +1399,6 @@ p {
 }
 
 .page-footer__text {
-  text-align: center;
   margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
@@ -1399,6 +1406,11 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .page-footer__text {
+    text-align: center;
+  }
 }
 
 .address {
@@ -1433,6 +1445,11 @@ p {
 .address__item {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .address__item {
+    text-align: left;
+  }
+}
 
 .address__item:not(:last-child) {
   margin-bottom: 9px;
@@ -1446,7 +1463,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 

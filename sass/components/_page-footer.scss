@@ -5,7 +5,7 @@
 }
 .page-footer__box {
    display: flex;
-   @media screen and (max-width: 1199px) {
+   @include desktop-down {
       flex-direction: column;
       align-items: center;
    }
@@ -13,13 +13,20 @@
       align-items: baseline;
    }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-   .page-footer__box-tablet {
+
+   .page-footer__tablet {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
          display: flex;
          justify-content: space-between;
          width: 100%;
+         padding: 0 89px 0 76px;
+      }
+      @include desktop {
+         display: flex;
+         align-items: baseline;
+      }
    }
-}
+
 
 .page-footer__social {
    @include tablet-down {
@@ -32,7 +39,9 @@
 }
 
 .page-footer__text {
-   text-align: center;
+   @include desktop-down {
+      text-align: center;
+   }
    margin-bottom: 20px;
    color: $color-text-button;
    font-weight: 700;

@@ -21,3 +21,8 @@
       @content;
    }
 }
+@mixin desktop-down {
+   @media screen and (max-width: 1199px) {
+         @content;
+      }
+}
