@@ -526,7 +526,7 @@ p {
 .menu__toggle:hover, .menu__toggle:focus {
   fill: #2196f3;
 }
-@inc {
+@media screen and (min-width: 768px) {
   .menu__toggle {
     display: none;
   }
@@ -544,7 +544,7 @@ p {
   z-index: 999;
   transform: translateX(100%);
 }
-@inc ) {
+@media screen and (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -1050,6 +1050,10 @@ p {
 .projects__img {
   position: relative;
   overflow: hidden;
+}
+
+.project__image {
+  width: 100%;
 }
 
 .project-overlay {
