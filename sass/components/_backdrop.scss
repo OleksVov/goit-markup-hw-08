@@ -7,8 +7,8 @@
    background-color: $color-background-backdrop;
    opacity: 1;
    visibility: visible;
-   @include transition(opacity);
-   @include transition(visibility);
+   transition: visibility $cubic,
+            opacity $cubic;
    overflow: scroll;
 
    &.is-hidden {

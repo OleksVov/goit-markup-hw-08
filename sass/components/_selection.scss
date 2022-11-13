@@ -22,10 +22,10 @@
    font-weight: 500;
    line-height: 1.63;
    letter-spacing: 0.03em;
-   @include transition(color);
-   @include transition(background-color);
-   @include transition(box-shadow);
-     
+   transition: color $cubic,
+         background-color $cubic,
+         box-shadow $cubic;
+
    &:hover,
    &:focus {
          color: $color-text-button;
