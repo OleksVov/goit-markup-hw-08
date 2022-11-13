@@ -44,10 +44,7 @@
 }
 @include tablet-down {
    .breadcrumb__item:not(:last-child) {
-         padding-bottom: 32px;
-      }
-   .breadcrumb__item:last-child {
-         margin-bottom: 302px;
+         margin-bottom: 32px;
       }
 }
 

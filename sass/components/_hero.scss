@@ -2,8 +2,15 @@
    padding: 118px 0;
    background-color: $color-background-hero;
    text-align: center;
+   @include mobile {
+      max-width: 480px;
+   }
+   @include tablet {
+      max-width: 768px;
+   }
    @include desktop {
       padding: 200px 0;
+      max-width: 1600px;
    }
 }
 
@@ -45,7 +52,7 @@
    background-image: linear-gradient(to right,
          $gradient-background-hero,
          $gradient-background-hero ),
-      url('/images/hero-480.jpg');
+      url('../images/hero-480.jpg');
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -54,26 +61,37 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
    .overlay {
-      background-image: url('/images/hero-480@2x.jpg');
+      background-image: linear-gradient(to right,
+            $gradient-background-hero,
+            $gradient-background-hero ),
+      url('../images/hero-480@2x.jpg');
    }
 }
 @media screen and (min-width: 768px) {
    .overlay {
-      background-image: url('/images/hero-768.jpg');
-      // max-width: 768px;
+      background-image: linear-gradient(to right,
+            $gradient-background-hero,
+            $gradient-background-hero ),
+      url('../images/hero-768.jpg');
    }
       @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
          .overlay {
-            background-image: url('/images/hero-768@2x.jpg');
+            background-image: linear-gradient(to right,
+                  $gradient-background-hero,
+                  $gradient-background-hero ),
+            url('../images/hero-768@2x.jpg');
          }
       }
 }
 @media screen and (min-width: 1200px) {
    .overlay {
-      background-image: url('/images/hero-1200.jpg');
-      max-width: 1600px;
+      background-image: linear-gradient(to right,
+            $gradient-background-hero,
+            $gradient-background-hero ),
+      url('../images/hero-1200.jpg');
+      // max-width: 1600px;
       height: 600px;
    }
 
@@ -81,7 +99,10 @@
    (min-resolution: 192dpi),
    (min-resolution: 2dppx) {
       .overlay {
-         background-image: url('/images/hero-1200@2x.jpg');
+         background-image: linear-gradient(to right,
+               $gradient-background-hero,
+               $gradient-background-hero ),
+         url('../images/hero-1200@2x.jpg');
       }
    }
 }
