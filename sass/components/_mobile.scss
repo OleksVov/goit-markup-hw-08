@@ -56,11 +56,14 @@
    display: flex;
    margin-bottom: 32px;
    font-weight: 500;
-   font-size: 34px;
+   font-size: 30px;
    line-height: 1.176;
    letter-spacing: 0.02em;
    color: $color-text-accent;
    text-decoration: none;
+   @include mobile {
+      font-size: 34px;
+   }
 }
 .social-mobile {
    display: flex;
@@ -75,11 +78,15 @@
    position: relative;
    display: block;
    font-weight: 500;
-   font-size: 18px;
+   font-size: 10px;
    line-height: 1.22;
    letter-spacing: 0.02em;
    color: $color-text-accent;
    text-decoration: none;
+   @include mobile {
+      font-size: 18px;
+   }
+
 }
 .social-mobile__item:not(:last-child)::after {
    position: absolute;

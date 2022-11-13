@@ -58,7 +58,6 @@
    letter-spacing: 0.01em;
    color: $color-text-primary;
    @include transition(transform);
-   @include transition(border-color);
 
    .registration__input:focus+&,
    .registration__input:not(:placeholder-shown)+& {
